@@ -1,0 +1,233 @@
+@charset "utf-8";
+body {
+	font-size: 14px;
+	background-image: url(../Images/purple_patturn.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+}
+#container {
+	width: 1288px;
+	height: auto;
+	background-color: rgba(255,255,255,1.00);
+	margin:auto;
+}
+/*Float the aside so it displays next to Main*/
+aside {
+	width: 150px;
+	height: 2560px;
+	float: left;
+	background-color: #FFAB7F;
+	background-image: url("../Images/chain.png");
+	padding-top: 10px;
+}
+header {
+	width: 1280px;
+	height: 170px;
+	background-color: hsla(21,100%,75%,1.00);
+	background-image: 
+		url(../Images/Artboard%201.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: inherit;
+	background-size: cover;
+	
+}
+main {
+	width: 1100px;
+	height: 2560px;
+	float: left;
+	padding: 10px;
+	background-color: hsla(260,100%,30%,0.36);	
+	
+}
+h1 {
+	font-family: pragmatapro-fraktur, serif;
+	font-weight: 700;
+	font-style: normal;
+	color: #541313;
+}
+p{
+	font-family: vaccine,serif;
+	font-weight: 400;
+	font-style: normal;
+}
+h3 {
+	font-size: 12px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+footer {
+	width: 1280px;
+	height: 175px;
+	background-image: url(../Images/horizontalchain.png);
+	clear: both;
+	background-color: hsla(21,100%,75%,1.00);
+	background-size: 1500px auto;
+}
+img {
+	
+}
+.floatleft{
+	float:left;
+}
+article {
+	margin-bottom: 30px;
+	font-family: pragmatapro-fraktur, serif;
+}
+nav {
+	width: 1280px;
+	height: 50px;
+	position: fixed;
+	top: 0px;
+
+}
+#container nav li {
+	display: block;
+	list-style-type: none;
+	float: left;
+	margin: 0px 40px 0px 0px;
+	width: 80px;
+	font-family: pragmatapro-fraktur, serif;
+	font-size: 24px;
+}
+#container nav ul {
+	margin: auto;
+	width: 565px;
+}
+
+
+
+/*Float the Main so it shows up next to the Aside. Reduce width by 150px so they both line up to header*/
+
+/*Clear the floater so the footer shows up in the right place again.*/
+
+
+
+
+nav a:link {
+	color: #FFAC7F;
+	text-decoration: none;
+	padding: 10px;
+}
+nav a:visited {
+	color: #B5A3DA;
+	text-decoration: none;
+}
+nav a:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+	background-color: #2364EE;
+	padding: 10px;
+	border-radius: 20px;
+}
+nav a:active {
+	color: #FFAC7F;
+	text-decoration: none;
+}
+.submit_btn {
+	width: 160px;
+	background-color: #F38644;
+	border-radius: 5px;
+	font-size: 16px;	
+}
+.submit_btn:hover{
+	-webkit-box-shadow: 6px 6px 35px 1px #000000;
+	box-shadow: 6px 6px 35px 1px #000000;
+}
+.column {
+	width: 250px;
+	height: 750px;
+	float: left;
+	margin-top: 0px;
+	margin-left: 60px;
+	margin-right: 20px;
+}
+.cclicense{
+	height: 20px;
+	width: 500px;
+	clear: both;
+	padding: 50px 0px 0px 0px;
+}
+video {
+	width: 600px;
+	margin: auto;
+	height: 600px;
+}
+
+/*rules for tablet*/
+@media (max-width: 1024px){
+	#container {
+		width: 768px;
+	}
+	header{
+		width: 768px;
+	}
+	nav{
+		width: 768px;
+	}
+	main{
+		width: 598px;
+		height: 2500px;
+	}
+	footer{
+		width: 768px;
+	}
+}
+	.column{
+		margin: 0px 20px 0px 30px;
+		}
+/*mobile devices*/
+@media only screen and (max-width : 375px ){
+	#container{
+		width: 300px;
+	}
+	
+	header{
+		width: 300px;
+		background-image: url("../gardens1.jpg")
+	}
+	nav{
+		width: 300px;
+		position: static;
+	}
+	main{
+		width: 300px
+	}
+	footer{
+		width: 300px;
+	}
+	aside{
+		display: none;
+	}
+	#container nav li {
+	display: list-item;
+	list-style-type: none;
+	float: none;
+	margin: 0px 0px 20px 0px;
+	width: 260px;
+	text-align: center;	
+	
+}
+	
+	#container nav ul {
+	width: 290px;
+}
+
+	nav a:link {
+	display: block;
+	width: 300px;
+	background-color: #65EBFB;
+	color: white;
+	}
+	
+	nav a:visited {
+	text-decoration: none;
+	color: white;
+}
+}
